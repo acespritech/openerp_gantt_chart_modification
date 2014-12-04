@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<templates>
+    <t t-name="GanttView">
+        <div>
+            <div t-att-id="widget.chart_id" class="oe_gantt"/>
+        </div>
+    </t>
+    <t t-name="GanttView-create-button">
+        <button class="oe_button oe_gantt_button_create">Create</button>
+    </t>
+    
+    <t t-name="GanttView-Options">
+        <table width="100%" class="db_option_table" style="margin: 10px">
+	        <tr>
+	            <td width="40%" style="padding-top: 3px; font-size: 14px;">Select option: </td>
+	            <td>
+	                <select style="width: 80px;" name="view-options" class="gantt-view-options">
+			            <option value="year">Year</option>
+			            <option value="month">Month</option>
+			            <option value="week">Week</option>
+			            <option value="all">ALL</option>
+			        </select>
+	            </td>
+	        </tr>
+	    </table>
+    </t>
+</templates>
